@@ -1,24 +1,23 @@
-<?php
-    //para declarar e utilizar variaveis, usa-se o'$'
-    $categorias = [];
-    $nome = 'Felipe';
-    $idade = 17;
+<!DOCTYPE html>
+<html>
 
-    $categorias[] = 'Infantil';
-    $categorias[] = 'Adolescente';
-    $categorias[] = 'Adulto';
-    $categorias[] = 'Idoso';
+    <head>
+        <meta charset="utf-8">
+        <title>Formulário de inscrição</title>
+        <meta name="author" content="">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initia-scale=1">
+    </head>
 
-    //print_r($categorias);
+    <body>
+    
+        <p>FORMULÁRIO PARA INCRIÇÃO DE COMPETIDORES</p>
 
-    // var_dump($nome);
-    // var_dump($idade);
-
-    if ($idade >=6 && $idade<=12 ) {
-        echo 'O nadador '.$nome.' compete na categoria '. $categorias[0];
-    }elseif ($idade >=13 && $idade <=18) {
-        echo 'O nadador '.$nome.' compete na categoria '. $categorias[1];
-    }else{
-        echo 'O nadador '.$nome.' compete na categoria '. $categorias[2];
-    }
-?>
+        <form action="script.php" method="post">
+            <p>Seu nome: <input type="text" name="nome"/></p>
+            <p>Sua idade: <input type="text" name="idade"/></p>
+            <p><input type="submit"/></p>
+            <!-- <p><button type="$_POST">Enviar</button></p> -->
+        </form>
+    </body>
+</html>
